@@ -101,3 +101,14 @@ nav a{
     font-family: Open sans;
     font-style: normal;
 }
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-inf{
+    text-align: center;
+}
