@@ -5,6 +5,30 @@ nav{
     justify-content: space-between;
     padding: 0px 200px;
 }
+@media (max-width:1200px) {
+    nav{
+        padding: 0px 100px;
+    }
+}
+@media (max-width: 768px) {
+    nav{
+        padding: 0px 50px;
+        flex-direction: column;
+        align-items: start;
+    }
+    nav > ul {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 20px; /* Add space for a more separated look */
+      }
+      nav li {
+        margin-right: 0px;
+        margin-bottom: 15px; /* Add spacing between list items */
+      } 
+      nav .nav-title {
+        font-size: 30px; /* Adjust font size for smaller screens */
+      }
+    
+}
 .nav-title{
     color: black ;
     font-size: 40px;
@@ -63,9 +87,45 @@ nav a{
 .banner-content{
     max-width: 500px;
 }
+ /* Responsive Banner */
+ @media (max-width: 768px) {
+   .banner {
+      padding: 20px 20px; /* Adjust padding */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
+    }
+  
+    .banner-content {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .banner.profile-pic {
+      width: 100%; /* Adjust profile pic size */
+    }
+  }
+.greetings{
+    font-size: 45px;
+    color: rgb(57, 34, 4);
+    margin-bottom: 0;
+}
 .banner.profile-pic{
     width: 500px;
 }
+@media (max-width: 768px) {
+    .banner {
+      padding: 20px 20px; /* Adjust padding */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
+    }
+  
+    .banner-content {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .banner.profile-pic {
+      width: 100%; /* Adjust profile pic size */
+    }
+  }
 .greetings{
     font-size: 45px;
     color: rgb(57, 34, 4);
@@ -100,6 +160,22 @@ nav a{
     line-height: normal;
     font-style: normal;
 }
+/* Responsive About Section */
+ @media (max-width: 768px) {
+   .about {
+      padding: 50px 20px; /* Adjust padding */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
+    }
+  
+    .about-content {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .about.profile-pic {
+      width: 100%; /* Adjust profile pic size */
+    }
+  }
 main{
     max-width: 1140px;
     margin: 0 auto;
@@ -107,6 +183,22 @@ main{
 main section{
     margin-top: 130px;
 }
+/* Responsive Main Section */
+ @media (max-width: 768px) {
+   .main {
+      padding: 50px 20px; /* Adjust padding */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
+    }
+  
+    .main-content {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .main.profile-pic {
+      width: 100%; /* Adjust profile pic size */
+    }
+  }
 .about-info-container{
     display: flex;
     justify-content: space-around;
@@ -172,6 +264,22 @@ main section{
     padding-left: 250px;
     padding-top: 150px;
 }
+/* Responsive Footer */
+ @media (max-width: 768px) {
+   .footer {
+      padding: 50px 20px; /* Adjust padding */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
+    }
+  
+    .footer-content {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .footer.profile-pic {
+      width: 100%; /* Adjust profile pic size */
+    }
+  }
 .contact input[type="text"],.contact input[type="email"] , textarea{
     display: block;
     margin-bottom: 25px;
@@ -181,6 +289,22 @@ main section{
     width:80%;
     border: none;
 }
+/* Responsive Contact Section */
+ @media (max-width: 768px) {
+   .contact {
+      padding: 50px 20px; /* Adjust padding */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
+    }
+  
+    .contact-content {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .contact.profile-pic {
+      width: 100%; /* Adjust profile pic size */
+    }
+  }
  *{
     font-family: "Poetsen One", sans-serif;
   font-weight: 400;
